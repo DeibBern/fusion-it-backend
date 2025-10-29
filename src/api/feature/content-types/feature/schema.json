@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "features",
+  "info": {
+    "singularName": "feature",
+    "pluralName": "features",
+    "displayName": "Feature"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "General Services",
+        "System Services",
+        "Sales"
+      ]
+    }
+  }
+}
